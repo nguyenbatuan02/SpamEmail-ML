@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.sparse import csr_matrix
 import warnings
+warnings.filterwarnings("ignore")
 
 
 class NaiveBayesClassifier:
@@ -73,10 +74,10 @@ class NaiveBayesClassifier:
         self.result = result
         return self.result
 
-    def score(self, testes):
+    def score(self, tests):
         score = 0
-        for i, test in enumerate(testes['Mail']):
-            if self.result['Label'][i] == testes['Label'][i]:
-                score += score + 1
-            return score / testes.shape[0]
+        for i, test in enumerate(tests['Mail']):
+            if self.result['Label'][i] == tests['Label'][i]:
+                score += 1
+            return score / tests.shape[0]
 

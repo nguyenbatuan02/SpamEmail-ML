@@ -12,18 +12,14 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from typing import Counter
 from wordcloud import WordCloud
-from Naive_Bayes_Classifier import NBClassifier
+from Naive_Bayes_Classifier import NaiveBayesClassifier
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import confusion_matrix
-# with open('1kEmails.csv') as f:
-#     df = csv.reader(f)
-#     row: list[str]
-#     for row in df:
-#         print(row)
+
 
 df = pd.read_csv('1kEmails.csv')
 df.columns = ['Label', 'Mail']
