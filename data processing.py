@@ -66,7 +66,9 @@ def process_text(text):
     return text
 
 
-print(process_text("Dear Voucher Holder, To claim this weeks offer, at you PC please go to http://www.e-tlp.co.uk/expressoffer Ts&Cs apply. To stop texts, txt STOP to 80062"))
+print(process_text("Dear Voucher Holder, To claim this weeks offer, at you PC please go t"
+                   "o http://www.e-tlp.co.uk/expressoffer"
+                   " Ts&Cs apply. To stop texts, txt STOP to 80062"))
 
 bag_word = []
 testmails= test['Mail']
